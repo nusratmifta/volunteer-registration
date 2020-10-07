@@ -51,7 +51,7 @@ const Registration = (props) => {
                         {errors.email && <span style={{color: 'red'}}> <br/> This field is required</span>}
                         <br />
 
-                        <input type="date" name="date" id="date" placeholder="Date" ref={register({ required: true })}/>
+                        <input type="date" name="date" id="" placeholder="Date" ref={register({ required: true })}/>
                         {errors.date && <span style={{color: 'red'}}> <br/> This field is required</span>}
                         <br />
 
