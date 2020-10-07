@@ -2,8 +2,13 @@ import React from 'react';
 import { Button, Nav} from 'react-bootstrap';
 import './Header.css';
 import Group from '../../logos/Group 1329.png';
+import { useHistory } from 'react-router-dom';
 
 const Header = () => {
+    const history = useHistory();
+    const enterRegister = () =>{ 
+        history.push('/myTask');
+    }
     return (
         <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.9)' }} >
 
@@ -18,7 +23,7 @@ const Header = () => {
                     <Nav style={{ marginLeft: '50px' }} href="#pricing">Events</Nav>
 
                     <div style={{ marginLeft: '50px', }} >
-                        <Button className="registerButton">Register</Button>
+                        <Button onClick={enterRegister} className="registerButton">Register</Button>
                         <Button className="adminButton">Admin</Button>
                     </div>
                 </div>

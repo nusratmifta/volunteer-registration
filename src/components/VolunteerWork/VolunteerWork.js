@@ -6,15 +6,15 @@ const VolunteerWork = ({ work }) => {
     const { name, pic, btnColor, key } = work;
 
     const history = useHistory();
-    const addEventTask =(volunteerTask) =>{
-        // console.log(volunteerTask);
-        history.push(`/registration/${volunteerTask}`);
+    const addEventTask =(volunteerTask, pic) =>{
+        // console.log(pic);
+        history.push(`/registration/${volunteerTask}/${pic}`);
     }
     return (
         <div className="col-md-3">
 
             <img className="image" src={require(`../../images/${pic}`)} alt="" />
-            <button onClick={()=>addEventTask(name)} style={{ backgroundColor: `${btnColor}` }} className="btnWork">{name}</button>
+            <button onClick={()=>addEventTask(name, pic)} style={{ backgroundColor: `${btnColor}` }} className="btnWork">{name}</button>
 
         </div>
     );

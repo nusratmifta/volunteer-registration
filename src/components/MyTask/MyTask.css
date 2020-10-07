@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    font-style: Montserrat;
+}
+.headerOption{
+    display: flex;
+    margin-left: 333px;
+    margin-top:64px;
+    font-size:16px;
+    font-weight:500;
+    font:normal;
+    text-align: center;
+    line-height:19.5px;
+}

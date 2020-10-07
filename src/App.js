@@ -10,6 +10,7 @@ import NotFound from './components/NotFound/NotFound';
 import Login from './components/Login/Login';
 import Registration from './components/Registration/Registration';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import MyTask from './components/MyTask/MyTask';
 
 export const UserContext = createContext();
 
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <h1>email:{loggedInUser.email}</h1>
+      
       <Router>
 
         <Switch>
@@ -32,8 +33,12 @@ function App() {
             <Login></Login>
           </Route>
 
-          <PrivateRoute path="/registration/:volunteerTask">
+          <PrivateRoute path="/registration/:volunteerTask/:pic">
             <Registration></Registration>
+          </PrivateRoute>
+
+          <PrivateRoute path="/myTask">
+           <MyTask></MyTask>
           </PrivateRoute>
 
           <Route exact path="/">
