@@ -1,0 +1,15 @@
+.image{
+    widows: 270px;
+    height: 320px;
+}
+.btnWork{
+    width:270px;
+    height:80px;
+    position: relative;
+    bottom:80px;
+    border: none;
+    border-radius:0px 0px 10px 10px;
+    color:#FFFFFF;
+    font-weight:600;
+    margin-bottom: -30px;
+}

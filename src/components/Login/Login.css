@@ -1,0 +1,50 @@
+.loginPage{
+    background-color:#E5E5E5;
+    height: 100%;
+    
+}
+.logo{
+    position: relative;
+    top:44px;
+    width: 202.81px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.form{
+    width: 570px;
+    height: 457px;
+    border:1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 100px;
+    background-color: #FFFFFF;
+}
+.form:hover{
+    border:1.5px solid #8dee55;
+}
+.signInBtn{
+    width: 450px;
+    height: 50px;
+    border-radius:30px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: block;
+    border: 1px solid gray;
+}
+.signInBtn:hover{
+    border: 2px solid blue;
+
+}
+.text{
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    margin-top:25px;
+}
