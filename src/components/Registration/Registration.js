@@ -31,6 +31,7 @@ const Registration = (props) => {
         })
 
         history.push('/myTask')
+        
 
     };
    
