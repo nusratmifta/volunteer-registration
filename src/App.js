@@ -11,6 +11,8 @@ import Login from './components/Login/Login';
 import Registration from './components/Registration/Registration';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import MyTask from './components/MyTask/MyTask';
+import VolunteerRegister from './components/AdminProperty/VolunteerRegister'
+import AddEvent from './components/AdminProperty/AddEvent';
 
 export const UserContext = createContext();
 
@@ -20,7 +22,7 @@ function App() {
 
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      
+
       <Router>
 
         <Switch>
@@ -38,8 +40,16 @@ function App() {
           </PrivateRoute>
 
           <PrivateRoute path="/myTask">
-           <MyTask></MyTask>
+            <MyTask></MyTask>
           </PrivateRoute>
+
+          <Route path="/volunteerList">
+            <VolunteerRegister></VolunteerRegister>
+          </Route>
+
+          <Route path="/taskSubmit">
+            <AddEvent></AddEvent>
+          </Route>
 
           <Route exact path="/">
             <Home></Home>

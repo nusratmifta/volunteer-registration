@@ -9,6 +9,11 @@ const Header = () => {
     const enterRegister = () =>{ 
         history.push('/myTask');
     }
+
+    const handleAdminProperties = () =>{
+        history.push('/volunteerList');
+    }
+
     return (
         <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.9)' }} >
 
@@ -24,7 +29,7 @@ const Header = () => {
 
                     <div style={{ marginLeft: '50px', }} >
                         <Button onClick={enterRegister} className="registerButton">Register</Button>
-                        <Button className="adminButton">Admin</Button>
+                        <Button onClick={handleAdminProperties} className="adminButton">Admin</Button>
                     </div>
                 </div>
             </div>
