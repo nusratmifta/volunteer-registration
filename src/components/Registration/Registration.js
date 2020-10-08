@@ -20,7 +20,7 @@ const Registration = (props) => {
     const onSubmit = (data) => {
         const taskData ={...data, ...picture};
         console.log(taskData);
-        fetch('http://localhost:3000/addRegistration', {
+        fetch('https://boiling-ocean-87883.herokuapp.com/addRegistration', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(taskData)

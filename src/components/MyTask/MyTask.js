@@ -13,7 +13,7 @@ const MyTask = () => {
     const { displayName } = loggedInUser;
 
     useEffect(() => {
-        fetch('http://localhost:3000/registration?email='+loggedInUser.email)
+        fetch('https://boiling-ocean-87883.herokuapp.com/registration?email='+loggedInUser.email)
             .then(res => res.json())
             .then(data => setRegistration(data));
     }, [])

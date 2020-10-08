@@ -3,7 +3,7 @@ import './TaskPage.css';
 
 const TaskPage = ({ myTask }) => {
     const { date, task, picture ,id} = myTask;
-    console.log(myTask);
+    // console.log(myTask);
     return (
 
         <div className='col-md-6'>
