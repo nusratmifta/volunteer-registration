@@ -1,4 +1,4 @@
-# Travel guru
+# Volunteer Network
 
 [Live server link](https://volunteer-network-fbf7c.firebaseapp.com/).
 
