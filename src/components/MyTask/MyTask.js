@@ -17,6 +17,7 @@ const MyTask = () => {
             .then(res => res.json())
             .then(data => setRegistration(data));
     }, [])
+    
 
     return (
 
@@ -25,7 +26,7 @@ const MyTask = () => {
                 <img src={Group} style={{ width: '202.81px', height: '60px' }} id="logo" alt="" />
 
                 <div className="headerOption">
-                    <Nav>Home</Nav>
+                    <Nav onClick="homeBtn">Home</Nav>
 
                     <Nav style={{ marginLeft: '50px' }} href="#home">Donation</Nav>
                     <Nav style={{ marginLeft: '50px' }} href="#features">Features</Nav>

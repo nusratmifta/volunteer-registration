@@ -31,7 +31,7 @@ const Registration = (props) => {
         })
 
         history.push('/myTask')
-        
+        window.location.reload(false);
 
     };
    
