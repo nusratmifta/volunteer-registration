@@ -3,7 +3,7 @@ import * as firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from '../../firebase.config';
 import './Login.css';
-import logo from '../../logos/Group 1329.png';
+import logo from '../../logos/volunteer.png';
 import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router-dom';
 

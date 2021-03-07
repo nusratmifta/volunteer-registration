@@ -1,6 +1,7 @@
 .image{
     width: 270px;
     height: 320px;
+    border-radius: 8px;
 }
 .btnWork{
     width:270px;

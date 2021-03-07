@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Nav} from 'react-bootstrap';
 import './Header.css';
-import Group from '../../logos/Group 1329.png';
+import logo from '../../logos/volunteer.png';
 import { useHistory } from 'react-router-dom';
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
         <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.9)' }} >
 
             <div className="navElement">
-                <img src={Group} style={{ width: '202.81px', height: '60px' }} id="logo" alt=""  />
+                <img src={logo} style={{ width: '150px', height: '120px' }} id="logo" alt=""  />
 
                 <div className="navOption">
                     <Nav>Home</Nav>
@@ -28,8 +28,8 @@ const Header = () => {
                     <Nav style={{ marginLeft: '50px' }} href="#pricing">Events</Nav>
 
                     <div style={{ marginLeft: '50px', }} >
-                        <Button onClick={enterRegister} className="registerButton">Register</Button>
-                        <Button onClick={handleAdminProperties} className="adminButton">Admin</Button>
+                        <Button  className="registerButton">Register</Button>
+                        {/* <Button onClick={handleAdminProperties} className="adminButton">Admin</Button> */}
                     </div>
                 </div>
             </div>
@@ -38,7 +38,12 @@ const Header = () => {
             <form style={{ textAlign: 'center', marginTop:'40px', marginBottom:'50px' }}>
                 <input style={{ backgroundColor: '#FBFBFB' }} className="searchArea" type="text" placeholder="Search..."></input>
                 <button style={{ padding: '7px 17px', backgroundColor: ' #3F90FC', borderRadius: '0px 8px 8px 0px' }} type="submit">Search</button>
+                
+                
             </form>
+
+           
+
         </div>
     );
 };
