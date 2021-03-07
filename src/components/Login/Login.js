@@ -36,14 +36,23 @@ const Login = () => {
     }
 
     const createAccount = () => {
-        alert('please sign with Google !');
+        // alert('please sign with Google !');
     }
     return (
         <div className="loginPage">
             <img className="logo" src={logo} alt="" />
             <div className="form">
-                <h1 style={{ textAlign: 'center', marginTop: '120px' }}>Login With</h1>
-                <button className="signInBtn" onClick={handleSignIn}><i class="fa fa-user-o" aria-hidden="true" style={{ marginRight: '80px', color: 'green' }} ></i>Continue with Google</button>
+                {/* <h4 style={{ textAlign: 'center', marginTop: '50px' }}>Please give user name and password</h4> */}
+                {/* <button className="signInBtn" onClick={handleSignIn}><i class="fa fa-user-o" aria-hidden="true" style={{ marginRight: '80px', color: 'green' }} ></i>Continue with Google</button> */}
+                <h5 style={{marginTop: '60px'}}>User Name</h5>
+                <input type="text"></input>
+        
+                <h5>Password</h5>
+                <input type="password"></input>
+                <br></br>
+                <br></br>
+                <button class="form-btn">Login</button>
+
                 <p> <span className='text'>Don't have an account?</span> <a onClick={createAccount} href="/login">Create an account</a></p>
             </div>
             <footer style={{ marginTop: '30px' }}>--</footer>

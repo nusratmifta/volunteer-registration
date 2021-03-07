@@ -14,8 +14,8 @@
     border-radius: 10px;
 }
 .form{
-    width: 570px;
-    height: 457px;
+    width: 500px;
+    height: 380px;
     border:1px solid #ABABAB;
     box-sizing: border-box;
     border-radius: 4px;
@@ -48,4 +48,14 @@
 p{
     text-align: center;
     margin-top:25px;
+}
+.form-btn{
+    background-color: blue;
+    margin-left:  150px;
+    padding:7px 60px;
+    color:white;
+    border-radius: 5px;
+}
+input{
+    border: 1px solid cyan;
 }
