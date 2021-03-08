@@ -44,11 +44,11 @@ const Login = () => {
             <div className="form">
                 {/* <h4 style={{ textAlign: 'center', marginTop: '50px' }}>Please give user name and password</h4> */}
                 {/* <button className="signInBtn" onClick={handleSignIn}><i class="fa fa-user-o" aria-hidden="true" style={{ marginRight: '80px', color: 'green' }} ></i>Continue with Google</button> */}
-                <h5 style={{marginTop: '60px'}}>User Name</h5>
-                <input type="text"></input>
+                <h5 class="headerName">User Name</h5>
+                <input type="text" class= "signInBtn"></input>
         
-                <h5>Password</h5>
-                <input type="password"></input>
+                <h5 class="headerPass">Password</h5>
+                <input type="password" class= "signInBtn"></input>
                 <br></br>
                 <br></br>
                 <button class="form-btn">Login</button>
