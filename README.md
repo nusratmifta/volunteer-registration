@@ -4,12 +4,12 @@
 
 
 ## Features
-1. It is a volunteer network website ,where volunteer booking the date following the expected date.
-2. If he will change the date or cancel the program then he can do it
-3. The website is full stack development base, when user gave the information.
-4. Then the data store in database and came from database to user interface.
-5. In this website admin seen the all user information like mail,course name,date  etc.
-6. Admin also operate the website.
+1. It is a volunteer network website where volunteers can reserve a date subsequent to the anticipated date. 
+2. If he/she desired, he/she might change the date or cancel the program. 
+3. When the user provides the information, the website acts as a full-stack development platform. 
+4. The data was subsequently stored in the database and then transferred to the user interface via the database.
+5. The administrator of this website has access to all user information, including email addresses, course names, and dates. 
+6. Additionally, the administrator manages the website.
 
 ## Language and frame work
 * React JS
